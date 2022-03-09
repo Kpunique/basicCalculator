@@ -1,16 +1,16 @@
-﻿int num1 = 0;
-int num2 = 0;
+﻿double num1 = 0;
+double num2 = 0;
 
 Console.WriteLine("console calculator\r");
 Console.WriteLine("- - - - - - - - - - - - - - - - - - - - - - - - \n");
 
 
 Console.WriteLine("Type a number, and then press enter");
-num1 = Convert.ToInt32(Console.ReadLine());
+num1 = Convert.ToDouble(Console.ReadLine());
 
 
 Console.WriteLine("Type another number, and then press enter");
-num2 = Convert.ToInt32(Console.ReadLine());
+num2 = Convert.ToDouble(Console.ReadLine());
 
 
 Console.WriteLine("Choose an option from the following list");
@@ -29,9 +29,9 @@ switch (Console.ReadLine())
         Console.WriteLine($"your result: {num1} - {num2} = " + (num1 - num2));
         break;
     case "c":
-        Console.WriteLine($"your result: {num1} * {num2} " + (num1 * num2));
+        Console.WriteLine($"your result: {num1} * {num2} = " + (num1 * num2));
         break;
     case "d":
-        Console.WriteLine($"your result: {num1} / {num2}" + (num1 / num2));
+        Console.WriteLine($"your result: {num1} / {num2} = " + (num1 / num2));
         break;
 }
